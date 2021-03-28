@@ -59,7 +59,6 @@ def dataProcessor(data_list):
     def processingHelper(data_):
         data = data_[0]
         season = data_[1]
-        # print(data)
         cnt = 0
         year_data = []
         for i in list(str(data).split('<td class="player">')):
@@ -101,8 +100,8 @@ if __name__ == '__main__':
         'https://www.nba.com/stats/players/speed-distance/?Season=2017-18&SeasonType=Regular%20Season',
         'https://www.nba.com/stats/players/speed-distance/?Season=2016-17&SeasonType=Regular%20Season',
         'https://www.nba.com/stats/players/speed-distance/?Season=2015-16&SeasonType=Regular%20Season',
-        'https://www.nba.com/stats/players/speed-distance/?Season=2014-15&SeasonType=Regular%20Season'
-        # 'https://www.nba.com/stats/players/speed-distance/?Season=2013-14&SeasonType=Regular%20Season'
+        'https://www.nba.com/stats/players/speed-distance/?Season=2014-15&SeasonType=Regular%20Season',
+        'https://www.nba.com/stats/players/speed-distance/?Season=2013-14&SeasonType=Regular%20Season'
     ]
 
     getNbaData(nba_urls=nba_urls)
