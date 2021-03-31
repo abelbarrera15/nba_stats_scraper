@@ -15,7 +15,6 @@ def getNbaData(nba_urls: list):
     for l in data:
         for sub_l in l:
             fin.append(sub_l)
-            
     df = pd.DataFrame(data=fin, columns=['Season',
                                          'PlayerTeam',
                                          'GP',
