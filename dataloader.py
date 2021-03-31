@@ -29,6 +29,7 @@ def getNbaData(nba_urls: list):
                                          'AvgSpeed',
                                          'AvgSpeedOff',
                                          'AvgSpeedDef'])
+    
     df.to_csv('./nba_stats.csv', encoding='utf-8',
               index=False, sep='|', header=True)
     return
